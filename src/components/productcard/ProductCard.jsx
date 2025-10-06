@@ -11,13 +11,13 @@ const ProductCard = (props) => {
                     <img src={product.image} alt={product.title} className="product-image" />
                 </div>
                 <div className="product-info">
-                    <p>
-                        <strong>{product.title}</strong>
-                    </p>
-                    <p>
+                    <p className='product-category'>
                         {product.category.toUpperCase()}
                     </p>
-                    <p>
+                    <p className='product-title'>
+                        <strong>{product.title}</strong>
+                    </p>
+                    <p className='product-price'>
                         <strong>€ {product.price.toFixed(2)}</strong>
                     </p>
                 </div>
