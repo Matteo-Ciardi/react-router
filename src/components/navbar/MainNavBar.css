@@ -17,14 +17,12 @@ nav a {
 
 nav a:hover {
     padding: 5px 10px;
-    color: #000000;
-    background-color: #ffff00;
+    background-color: #802c6e;
     border-radius: 2px;
 }
 
 nav a.active {
     padding: 5px 10px;
-    color: #000000;
-    background-color: #ffff00;
+    background-color: #802c6e;
     border-radius: 2px;
 }
