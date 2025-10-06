@@ -1,5 +1,7 @@
 import { NavLink } from"react-router-dom";
 
+import './MainNavBar.css'
+
 const links = [
     {path: "/", label: "Home"},
     {path: "/chi-siamo", label: "Chi Siamo"},
@@ -11,7 +13,7 @@ const MainNavBar = () => {
         <nav>
             <ul>
                 {links.map(link => (
-                    <li>
+                    <li key={link.path}>
                         <NavLink to={link.path}>{link.label}</NavLink>
                     </li>
                 ))}

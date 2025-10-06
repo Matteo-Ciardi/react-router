@@ -5,8 +5,8 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import './App.css'
 
 import HomePage from "./pages/homepage/HomePage";
-import AboutPage from "./pages/about/AboutPage";
-import ProductsPage from "./pages/products/ProductsPage";
+import AboutPage from "./pages/aboutpage/AboutPage";
+import ProductsPage from "./pages/productspage/ProductsPage";
 
 function App() {
   return (

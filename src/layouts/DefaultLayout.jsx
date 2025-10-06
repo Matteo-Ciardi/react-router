@@ -12,11 +12,11 @@ export default function DefaultLayout() {
                 </div>
             </header>
 
-            <main>
+            <main className="main-container">
                 <Outlet />
             </main>
 
-            <footer>
+            <footer className="footer-container">
 
             </footer>
         </>
