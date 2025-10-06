@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 
 export default function DefaultLayout() {
@@ -6,11 +6,11 @@ export default function DefaultLayout() {
         <>
             <header>
                 <div className="header-container">
-                    <Link to="/"><img src='src\assets\img\logo.png' alt='logo' /></Link>
+                    <Link to="/"><img src='src/assets/img/logo.png' alt='logo' /></Link>
 
                 </div>
             </header>
-            
+
             <main>
                 <Outlet />
             </main>
