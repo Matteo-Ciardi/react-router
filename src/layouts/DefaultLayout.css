@@ -1,0 +1,21 @@
+.header-container {
+    width: 60%;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+header figure {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 60px;
+    margin-right: 20px;
+}
+

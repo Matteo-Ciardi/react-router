@@ -1,11 +1,12 @@
-import { NavLink } from"react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import './MainNavBar.css'
 
 const links = [
-    {path: "/", label: "Home"},
-    {path: "/chi-siamo", label: "Chi Siamo"},
-    {path: "/prodotti", label: "Prodotti"}
+    { path: "/", label: "HOME" },
+    { path: "/chi-siamo", label: "CHI SIAMO" },
+    { path: "/prodotti", label: "PRODOTTI" },
+    { path: "/carrello", label: <i className="fa-solid fa-bag-shopping my-bag"></i>}
 ]
 
 const MainNavBar = () => {
@@ -18,6 +19,7 @@ const MainNavBar = () => {
                     </li>
                 ))}
             </ul>
+            {/* <Link to={ }><i class="fa-solid fa-bag-shopping my-bag"></i></Link> */}
         </nav>
     )
 }
