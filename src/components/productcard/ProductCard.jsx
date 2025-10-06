@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import './ProductCard.css'
 
 const ProductCard = (props) => {
@@ -7,18 +9,18 @@ const ProductCard = (props) => {
     return (
         <>
             <div className="product-card">
-                <div className='image-box'>
+                <Link to={"/"}><div className='image-box'>
                     <img src={product.image} alt={product.title} className="product-image" />
-                </div>
+                </div></Link>
                 <div className="product-info">
                     <p className='product-category'>
-                        {product.category.toUpperCase()}
+                        <Link to={"/"}>{product.category.toUpperCase()}</Link>
                     </p>
                     <p className='product-title'>
-                        <strong>{product.title}</strong>
+                        <Link to={"/"}>{product.title}</Link>
                     </p>
                     <p className='product-price'>
-                        <strong>€ {product.price.toFixed(2)}</strong>
+                        € {product.price.toFixed(2)}
                     </p>
                 </div>
             </div>

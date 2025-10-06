@@ -17,7 +17,7 @@ export default function DefaultLayout() {
                     <MainNavBar />
                 </div>
             </header>
-
+            
             <main>
                 <div className="main-container">
                     <Outlet />

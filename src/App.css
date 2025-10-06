@@ -1,6 +1,4 @@
 body {
-    min-height: 100vh;
-    
     background-color: #20252a;
     background-image:
         radial-gradient(circle at 20% 20%, rgba(180, 200, 210, 0.25), transparent 45%),
@@ -12,4 +10,6 @@ body {
     background-attachment: fixed;
     background-position: center;
     color: #f4f4f4;
+
+    font-family: "Montserrat", sans-serif;
 }
