@@ -7,6 +7,7 @@ import './App.css'
 import HomePage from "./pages/homepage/HomePage";
 import AboutPage from "./pages/aboutpage/AboutPage";
 import ProductsPage from "./pages/productspage/ProductsPage";
+import ShoppingBag from "./pages/shoppingbag/ShoppingBag";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/chi-siamo" element={<AboutPage />} />
           <Route path="/prodotti" element={<ProductsPage />} />
+          <Route path="/carrello" element={<ShoppingBag />} />
         </Route>
       </Routes>
     </BrowserRouter>
