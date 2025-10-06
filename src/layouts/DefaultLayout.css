@@ -1,7 +1,12 @@
+/* HEADER */
+header {
+    background-color: #000000;
+}
+
 .header-container {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,3 +24,12 @@ header figure {
     margin-right: 20px;
 }
 
+/* MAIN */
+main {
+    background-color: #909cbe;
+}
+
+.main-container {
+    width: 60%;
+    margin: 0 auto;
+}
