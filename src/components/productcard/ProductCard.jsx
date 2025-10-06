@@ -1,3 +1,5 @@
+import './ProductCard.css'
+
 const ProductCard = (props) => {
 
     const { product } = props;
@@ -5,8 +7,8 @@ const ProductCard = (props) => {
     return (
         <>
             <div className="product-card">
-                <div>
-                    <img src={product.image} alt={product.title} className="product-img" />
+                <div className='image-box'>
+                    <img src={product.image} alt={product.title} className="product-image" />
                 </div>
                 <div className="product-info">
                     <p>
