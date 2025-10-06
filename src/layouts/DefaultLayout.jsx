@@ -3,7 +3,6 @@ import MainNavBar from "../components/navbar/MainNavBar";
 
 import './DefaultLayout.css'
 
-
 export default function DefaultLayout() {
     return (
         <>
