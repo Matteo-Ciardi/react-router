@@ -26,7 +26,7 @@ export default function DefaultLayout() {
 
             <footer>
                 <div className="footer-container">
-
+                    
                 </div>
             </footer>
         </>
