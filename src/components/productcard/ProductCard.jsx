@@ -17,7 +17,7 @@ const ProductCard = (props) => {
                         <Link to={"/"}>{product.category.toUpperCase()}</Link>
                     </p>
                     <p className='product-title'>
-                        <Link to={"/"}>{product.title}</Link>
+                        <Link to={`/prodotti/${product.id}`}>{product.title}</Link>
                     </p>
                     <p className='product-price'>
                         € {product.price.toFixed(2)}

@@ -7,6 +7,7 @@ import './App.css'
 import HomePage from "./pages/homepage/HomePage";
 import AboutPage from "./pages/aboutpage/AboutPage";
 import ProductsPage from "./pages/productspage/ProductsPage";
+import ProductDetailsPage from "./pages/productdetailspage/ProductDetailsPage";
 import ShoppingBag from "./pages/shoppingbag/ShoppingBag";
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/chi-siamo" element={<AboutPage />} />
-          <Route path="/prodotti" element={<ProductsPage />} />
+          <Route path="/prodotti">
+            <Route index element={<ProductsPage />} />
+            <Route path=":id" element={<ProductDetailsPage />} />
+          </Route>
           <Route path="/carrello" element={<ShoppingBag />} />
         </Route>
       </Routes>
