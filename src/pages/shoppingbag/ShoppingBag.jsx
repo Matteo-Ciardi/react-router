@@ -1,11 +1,17 @@
-const ShoppingBag = () => {
+// import DetailCard from "../../components/detailcard/DetailCard";
+
+const ShoppingBag = (props) => {
+
+    const { e } = props;
+
+
     return (
         <>
             <div>Questo è il carrello</div>
             <ul>
-                <li>item hP</li>
-                <li>item hP</li>
-                <li>item hP</li>
+                <li>{e.title}</li>
+                <li>{e.image}</li>
+                <li>{e.price}</li>
                 <li>item hP</li>
                 <li>item hP</li>
             </ul>

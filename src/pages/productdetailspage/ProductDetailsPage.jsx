@@ -10,6 +10,8 @@ export default function ProductDetailsPage() {
 
     const [detail, setDetail] = useState();
 
+    
+
     useEffect(() => {
         axios.get(`https://fakestoreapi.com/products/${id}`)
             .then(response => {
