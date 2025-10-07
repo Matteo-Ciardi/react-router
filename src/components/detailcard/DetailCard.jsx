@@ -23,7 +23,8 @@ const DetailCard = (props) => {
                         <button className='buy-button'>ACQUISTA</button>
                     </div>
 
-                    <p className='detail-description'>{detail.description}</p>
+                    <p className='detail-description'><strong>INFORMAZIONI:</strong><br />
+                    {detail.description}</p>
 
                 </div>
             </div>

@@ -9,6 +9,7 @@ import AboutPage from "./pages/aboutpage/AboutPage";
 import ProductsPage from "./pages/productspage/ProductsPage";
 import ProductDetailsPage from "./pages/productdetailspage/ProductDetailsPage";
 import ShoppingBag from "./pages/shoppingbag/ShoppingBag";
+import NotFound from "./pages/notfound/NotFound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path=":id" element={<ProductDetailsPage />} />
           </Route>
           <Route path="/carrello" element={<ShoppingBag />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
