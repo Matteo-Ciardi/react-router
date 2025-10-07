@@ -1,22 +1,8 @@
-import { useState } from 'react';
-
 import './DetailCard.css'
-import ShoppingBag from '../../pages/shoppingbag/ShoppingBag';
 
 const DetailCard = (props) => {
 
     const { detail } = props;
-
-    const [buyed, setBuyed] = useState([]);
-    const [showBags, setShowBags] = useState(false);
-
-    function sendItem() {
-        const addBag = [...buyed,
-        { image: detail.image, title: detail.title, price: detail.price }
-        ];
-        setBuyed(addBag);
-        setShowBags(true);
-    }
 
     return (
         <>
@@ -34,19 +20,7 @@ const DetailCard = (props) => {
 
                     <div className='buy'>
                         <p className='detail-price'>€ {detail.price.toFixed(2)}</p>
-                        <button className='buy-button'
-                            onClick={sendItem}>ACQUISTA</button>
-
-                        {showBags &&
-                            buyed.map((e, index) => (
-
-                                <ShoppingBag
-                                    key={index}
-                                    e={e} />
-
-                            ))
-
-                        }
+                        <button className='buy-button'>ACQUISTA</button>
                     </div>
 
                     <p className='detail-description'><strong>INFORMAZIONI:</strong><br />

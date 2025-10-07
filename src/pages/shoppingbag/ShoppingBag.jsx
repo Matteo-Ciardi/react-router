@@ -1,20 +1,7 @@
-// import DetailCard from "../../components/detailcard/DetailCard";
-
-const ShoppingBag = (props) => {
-
-    const { e } = props;
-
-
+const ShoppingBag = () => {
     return (
         <>
-            <div>Questo è il carrello</div>
-            <ul>
-                <li>{e.title}</li>
-                <li>{e.image}</li>
-                <li>{e.price}</li>
-                <li>item hP</li>
-                <li>item hP</li>
-            </ul>
+            <div>QUESTO E' IL CARRELLO</div>
         </>
     )
 }
