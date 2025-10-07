@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react";
 import DetailCard from "../../components/detailcard/DetailCard";
 
@@ -6,6 +6,7 @@ import './ProductDetailsPage.css'
 
 export default function ProductDetailsPage() {
     const { id } = useParams();
+    const navigate = useNavigate();
 
     const [detail, setDetail] = useState();
 
@@ -19,9 +20,8 @@ export default function ProductDetailsPage() {
             })
             .catch(() => {
                 navigate("/prodotti");
-
-            })
-    }, [id])
+            });
+    }, [id, navigate]);
 
     return (
         <>
