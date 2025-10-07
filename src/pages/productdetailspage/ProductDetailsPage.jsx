@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react";
+import DetailCard from "../../components/detailcard/DetailCard";
 
 export default function ProductDetailsPage() {
     const { id } = useParams();
@@ -15,8 +16,9 @@ export default function ProductDetailsPage() {
     return (
         <>
             <div>
-                {detail ? (<div>
-                </div>)
+                {detail ? (<DetailCard 
+                                key={id}
+                                detail={detail}/>)
                     : (<p>Loading...</p>)}
             </div>
         </>
