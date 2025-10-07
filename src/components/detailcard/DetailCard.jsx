@@ -14,7 +14,7 @@ const DetailCard = (props) => {
                     <h1 className='detail-title'>{detail.title}</h1>
 
                     <p className="detail-rating">
-                        ⭐ {detail.rating?.rate} / 5
+                        <i className="fa-solid fa-star" style={{color: "#e6da00ff"}}></i> {detail.rating?.rate} / 5
                         <span className="rating-count"> ({detail.rating?.count} recensioni)</span>
                     </p>
 

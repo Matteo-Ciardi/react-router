@@ -1,7 +1,11 @@
+import './NotFound.css'
+
 const NotFound = () => {
     return (
         <>
-            OOOPS.. NON C'E' NULLA QUA
+            <div className='not-found-container'>
+                <img src="src/assets/img/notfound.png" className="not-found" />
+            </div>
         </>
     )
 }

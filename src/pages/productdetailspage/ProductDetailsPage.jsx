@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react";
 import DetailCard from "../../components/detailcard/DetailCard";
 
+import './ProductDetailsPage.css'
+
 export default function ProductDetailsPage() {
     const { id } = useParams();
 
@@ -9,17 +11,29 @@ export default function ProductDetailsPage() {
 
     useEffect(() => {
         axios.get(`https://fakestoreapi.com/products/${id}`)
-            .then(response => setDetail(response.data))
-            .catch(() => { navigate("/prodotti") })
+            .then(response => {
+                // FAKE LOADING
+                setTimeout(() => {
+                    setDetail(response.data);
+                }, 2000);
+            })
+            .catch(() => {
+                navigate("/prodotti");
+
+            })
     }, [id])
 
     return (
         <>
             <div>
-                {detail ? (<DetailCard 
-                                key={id}
-                                detail={detail}/>)
-                    : (<p>Loading...</p>)}
+                {detail ? (<DetailCard
+                    key={id}
+                    detail={detail} />)
+                    : (
+                        <div className="spinner-container">
+                            <div className="spinner"></div>
+                        </div>
+                    )}
             </div>
         </>
     )
